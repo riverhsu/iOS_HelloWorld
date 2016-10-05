@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var clickBtn: UIButton!
+    @IBOutlet weak var showText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //test
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +26,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func valueChanged(_ sender: AnyObject) {
+        showText.text = "Hello iOS World"
+    }
 
 }
 
